@@ -2,6 +2,8 @@ const express = require('express');
 const app = express();
 app.use(express.urlencoded({ extended: true }));
 
+const PORT = 8000
+
 const cors=require("cors");
 const corsOptions ={
    origin:'*', 
@@ -33,6 +35,6 @@ app.get('/', (req, res) => {
 });
 require('./routes/order.routes.js')(app);
 // listen for requests
-app.listen($PORT || 8000, () => {
+app.listen(PORT || 8000, () => {
     console.log("Server is listening on port 8000");
 });

@@ -1,0 +1,35 @@
+{
+  "name": "cms_backend",
+  "version": "1.0.0",
+  "description": "CMS backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sparshsingh21/cms-backend.git"
+  },
+  "keywords": [
+    "cms",
+    "backend",
+    "spreadsheet",
+    "google"
+  ],
+  "author": "Sparsh Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sparshsingh21/cms-backend/issues"
+  },
+  "homepage": "https://github.com/sparshsingh21/cms-backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

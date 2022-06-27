@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const env = require('dotenv');
 app.use(express.urlencoded({ extended: true }));
 
 const PORT = 8000
@@ -35,6 +36,6 @@ app.get('/', (req, res) => {
 });
 require('./routes/order.routes.js')(app);
 // listen for requests
-app.listen(PORT || 8000, () => {
+app.listen(process.env.PORT || 8000, () => {
     console.log("Server is listening on port 8000");
 });
